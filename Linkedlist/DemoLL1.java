@@ -26,6 +26,18 @@ public class DemoLL1
 		int v= sc.nextInt();
 		obj2.insertOrder(v);
 		obj2.display();
+		
+		//remove duplicates from linkedlist
+		obj2.duplicate();
+		obj2.display();
+		
+		
+		// dispaly element from kth position to last
+		System.out.println("enter kth poistion");
+		int kpos = sc.nextInt();
+	    obj2.k_last(kpos);
+		
+		
 	}
 
 }

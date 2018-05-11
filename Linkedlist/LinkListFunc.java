@@ -271,6 +271,54 @@ public class LinkListFunc
 		return z;
 	}
 	
+	// remove duplicates from linkedlist
+	
+	void duplicate()
+	{
+		 Node p = first;
+		 Node q = first;
+		 
+		 while(q.getNext()!=null)
+		 {
+			 p = q;
+			 while(p.getNext()!=null)
+			 {
+				 Node x = p;
+				 p= p.getNext();
+				 if(p.getData()==q.getData())
+				 {
+					 x.setNext(p.getNext());
+					 System.out.println(" Element " + q.getData()+ " deleted ");
+				 }
+			 }
+			 
+			 q=q.getNext();
+		 }
+			 
+	 }
+	
+	
+	// return kth last element
+	void k_last(int pos)
+	{
+		Node p = first;
+		int c = 1;
+		while(c!=(pos) && p.getNext()!=null)
+		{
+			c++;
+			p=p.getNext();
+		}
+		
+		if(c==pos)
+		{
+			while(p!=null)
+			{
+				System.out.println(p.getData());
+				p=p.getNext();
+			}
+		}
+	}
+	
 	
 }
 

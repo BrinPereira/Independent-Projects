@@ -15,12 +15,15 @@ operations include:
 13) implemented Stack using LinkedList
 14) double linkedlist
 15) enter data in double linkedlist
-16) delete the data from double linkedList
-17) remove duplicates from the linkedlist
-18) return kth to last element from linkedList
-19) delete the middle node
-20) sum lists
-21) check if linkedlist is palindrome
-22) insert element at tail o fthe linkedlist
-23) cycle detection
-24) implement queue as linkedlist
+16) Enter data in double linkedlist at any random position.
+17) delete the data from double linkedList
+18) remove duplicates from the single linkedlist and double linkedlist
+19) return kth to last element from linkedList single and double
+20) delete the middle node
+21) sum lists
+22) check if linkedlist is palindrome
+23) insert element at tail o fthe linkedlist
+24) cycle detection
+25) implement queue as linkedlist
+26) Circular Linkedlist
+27) LinkedlIst as queue

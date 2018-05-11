@@ -4,6 +4,7 @@ public class Node
 {
 	 int data;
 	 Node next;
+	 Node prev;
 	
 	void setData(int v)
 	{
@@ -15,6 +16,11 @@ public class Node
 		next =x;
 	}
 	
+	void setPrev(Node n)
+	{
+		prev = n;
+	}
+	
 	int getData()
 	{
 		return data;
@@ -23,5 +29,10 @@ public class Node
 	Node getNext()
 	{
 		return next;
+	}
+	
+	Node getPrev()
+	{
+		return prev;
 	}
 }

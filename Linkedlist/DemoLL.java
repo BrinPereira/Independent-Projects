@@ -21,7 +21,7 @@ public class DemoLL
 		System.out.println("Elements are :");
 		obj.display();		// displaying elements of LL
 		
-		// search element in unsorted element
+		// search element in unsorted elementm
 		System.out.println("Enter elements to be search");
 		int a = sc.nextInt();
 		System.out.println(obj.search(a));
