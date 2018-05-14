@@ -1,0 +1,66 @@
+
+/*CSS for frame */
+frame
+{
+    background-color: #707070;
+}
+
+div
+{
+    background-color: #707070;
+}
+
+
+/*CSS for button */
+.btn {
+					background-color:crimson; /* Blue background */
+					border: none; /* Remove borders */
+					color: white; /* White text */
+					padding: 10px 30px; /* Some padding */
+					font-size: 16px; /* Set a font size */
+					cursor: pointer; /* Mouse pointer on hover */
+					margin:10px;
+						}
+
+				/* Darker background on mouse-over */
+					.btn:hover {
+						background-color: Brown;}
+		
+							* {
+					  box-sizing: border-box;
+					}
+
+					/* Style the search field */
+					form.example input[type=text] {
+					  padding: 10px;
+					  font-size: 17px;
+					  border: 1px solid grey;
+					  float: center;
+					  width: 30%;
+					  background: #f1f1f1;
+					}
+
+					/* Style the submit button */
+					form.example button {
+					  float: center;
+					  width: 5%;
+					  padding: 10px;
+					  background: #2196F3;
+					  color: white;
+					  font-size: 17px;
+					  border: 1px solid grey;
+					  border-left: none; /* Prevent double borders */
+					  cursor: pointer;
+					}
+
+					form.example button:hover {
+					  background: #0b7dda;
+					}
+
+				/* Clear floats */]\
+					form.example::after {
+					  content: "";
+					  clear: both;
+					  display: table;}
+					  
+
