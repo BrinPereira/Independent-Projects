@@ -158,6 +158,43 @@ public class DoubleLL
 	}
 	
 	
+	// delete middle element of linkedlist	
+		void middle_delete()
+		{
+			int c =1;
+			Node p= first;
+			Node q = first;
+			Node x = null;
+			
+			while(p.getNext()!=null)
+			{
+				c++;
+				p=p.getNext();
+			}
+			
+			if(c%2==1)
+			{
+				int val= c/2;
+				while(val!=0)
+				{
+					q=q.getNext();
+					val--;
+				}
+				x=q;
+				q.getPrev().setNext(q.getNext());
+				q.getNext().setPrev(q.getPrev());
+		
+				System.out.println("element deleted successfully " + x.getData());		
+			}
+			
+			else
+			{
+			    System.out.println("linkedlist size is even hence no middle element ");	
+			}
+		}
+		
+
+	
 	
 	 
 }

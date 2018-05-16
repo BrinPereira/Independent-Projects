@@ -18,10 +18,11 @@ public class DemoLL1
 			obj2.add(element);
 		}
 		
+		// displaying elements of LL
 		System.out.println("Elements are :");
-		obj2.display();		// displaying elements of LL
+		obj2.display();		
 		
-		// insert elemnts in sorted elemnts
+		// insert elements in sorted elements
 		System.out.println("enter element to inserted in the order list ");
 		int v= sc.nextInt();
 		obj2.insertOrder(v);
@@ -30,14 +31,15 @@ public class DemoLL1
 		//remove duplicates from linkedlist
 		obj2.duplicate();
 		obj2.display();
-		
-		
-		// dispaly element from kth position to last
+				
+		// display element from kth position to last
 		System.out.println("enter kth poistion");
 		int kpos = sc.nextInt();
 	    obj2.k_last(kpos);
-		
-		
+	
+	   // delete the middle element of linkedlist 
+	    obj2.middle_delete();
+	    obj2.display();
+				
 	}
-
 }

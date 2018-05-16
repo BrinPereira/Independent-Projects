@@ -20,8 +20,8 @@ public class DemoLL
 		
 		System.out.println("Elements are :");
 		obj.display();		// displaying elements of LL
-		
-		// search element in unsorted elementm
+		 
+		// search element in unsorted element
 		System.out.println("Enter elements to be search");
 		int a = sc.nextInt();
 		System.out.println(obj.search(a));
@@ -29,7 +29,7 @@ public class DemoLL
 		// finding maximum element from the list
 		System.out.println("Maximum Elements :" + obj.maximum());
 		
-		// adding element at begining 
+		// adding element at beginning 
 		System.out.println("Enter element to be added at the begining");
 		int no1 = sc.nextInt();
 		obj.insertBegin(no1);
@@ -50,11 +50,16 @@ public class DemoLL
 		obj.display();
 		
 		//revere the linked list
-		System.out.println("reverse linked list");
+		System.out.println("reverse linked list");		
 		obj.reverseList();
-		obj.display();
+		obj.display();                                                
 		
 		// copy the linkedlist from one to other		
 		obj.copy();
-	}
+		
+		// check if the linkedlist is palindrome
+		obj.palindrome();
+		
+	
+		}
 }

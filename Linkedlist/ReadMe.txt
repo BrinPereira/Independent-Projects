@@ -20,10 +20,7 @@ operations include:
 18) remove duplicates from the single linkedlist and double linkedlist
 19) return kth to last element from linkedList single and double
 20) delete the middle node
-21) sum lists
-22) check if linkedlist is palindrome
-23) insert element at tail o fthe linkedlist
-24) cycle detection
-25) implement queue as linkedlist
-26) Circular Linkedlist
-27) LinkedlIst as queue
+21) check if linkedlist is palindrome
+22) implement queue as linkedlist
+23) Single Circular Linkedlist
+24) double Circular LinkedList

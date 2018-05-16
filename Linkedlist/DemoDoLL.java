@@ -23,7 +23,7 @@ public class DemoDoLL
 		System.out.println("Elements are :");
 		obj.display();		// displaying elements of LL
 		
-		System.out.println("Enter element to be added :");
+		/*System.out.println("Enter element to be added :");
 		int no2 = sc.nextInt();
 		System.out.println("enter position ");
 		int pos =sc.nextInt();
@@ -44,7 +44,13 @@ public class DemoDoLL
 		System.out.println("enter kth poistion");
 		int kpos = sc.nextInt();
 	    obj.k_last(kpos);
+*/	
+		
+		   // delete the middle element of linkedlist 
+	    obj.middle_delete();
+	    obj.display();
 	
+		
 	}
 
 }

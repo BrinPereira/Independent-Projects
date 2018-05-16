@@ -319,6 +319,79 @@ public class LinkListFunc
 		}
 	}
 	
+// delete middle element of linkedlist	
+	void middle_delete()
+	{
+		int c =1;
+		Node p= first;
+		Node q = first;
+		Node x = null;
+		
+		while(p.getNext()!=null)
+		{
+			c++;
+			p=p.getNext();
+		}
+		
+		if(c%2==1)
+		{
+			int val= c/2;
+			while(val!=0)
+			{
+				x=q;
+				q=q.getNext();
+				val--;
+			}
+			x.setNext(q.getNext());
+			System.out.println("element deleted successfully " + q.getData());		
+		}
+		
+		else
+		{
+		    System.out.println("linkedlist size is even hence no middle element ");	
+		}
+	}
+	
+	// palindrome 
+	
+	void palindrome()
+	{
+		Node t = first;
+		LinkListFunc l2 = new LinkListFunc();
+		while(t!=null)
+		{
+			l2.insertBegin(t.getData());
+			t = t.getNext();
+		}
+		System.out.println("Reverse list is:");
+		l2.display();
+		
+		Node q = l2.first;
+		Node p = first;
+		boolean flag = true;
+		
+		while(p!=null)
+		{
+			if(p.getData() == q.getData())
+			{
+				p=p.getNext();
+				q=q.getNext();
+			}
+			else
+			{
+				flag=false;
+				p=p.getNext();
+				q=q.getNext();
+		
+			}
+		}
+		
+		if(flag==true)
+			System.out.println("Palindrome");
+		else
+			System.out.println("Not palindrome");		
+		
+	}
 	
 }
 
