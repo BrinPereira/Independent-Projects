@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+	<title>Index page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle2.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle1.css">
+	
+	</head>
+	
+	<body>
+	
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">		  
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Career</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">FAQS</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		  
+							<!-- left frame -->
+<div class="container-fluid text-center">    
+	<div class="row content">
+		<div class="col-sm-2 sidenav">
+			<p><a href="url" style="font-size: 20px">Children</a></p>
+			<p><a href="url" style="font-size: 20px">Fiction</a></p>
+			<p><a href="url" style="font-size: 20px">Fantasy</a></p>
+			<p><a href="url" style="font-size: 20px">Science</a></p>
+			<p><a href="url" style="font-size: 20px">Mystery</a></p>
+			<p><a href="url" style="font-size: 20px">Adventure</a></p>
+			<p><a href="url" style="font-size: 20px">Comedy</a></p>
+			<p><a href="url" style="font-size: 20px">Fairy tale</a></p>
+			<p><a href="url" style="font-size: 20px">History </a></p>
+			<p><a href="url" style="font-size: 20px">Romance</a></p>
+		</div>
+			   
+				<!-- middle frame -->  
+	<div class="col-sm-8 "> 
+	<br> <br>
+		<div class="mySlides ">
+			<img src="image\book1.jpg" width="800" height="400"> 
+		</div>
+				
+		<div class="mySlides">
+			<img src="image\book2.jpg" width="800" height="400">
+		</div>
+
+		<div class="mySlides">
+			<img src="image\book3.jpg" width="800" height="400">
+		</div>
+
+		<div class="mySlides">
+			<img src="image\book4.jpg" width="800" height="400">
+		</div>  		   
+		 <!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+			 
+			<div class="col-sm-2 sidenav">
+			  <div class="well">
+				<p>ADS</p>
+			   </div>
+			   <div class="well">
+				<p>ADS</p>
+			   </div>
+			</div>
+		 </div>
+</div>
+
+					<!-- lower frame -->
+<footer class="container-fluid text-center">
+	<font color= "white" ><i>copyrights @ReadforFree</i></font> 
+					<!-- twitter -->
+	<div class="col-xs-12 col-md-1 col-md-offset-3">
+		<a href="http://twitter.com/" target="_blank">
+			<img class="button" src="image\twitter.jpg" width="50" height="50" alt="Share on Twitter" title="Share on Twitter" />
+		</a>
+	</div>
+					<!-- facebook-->
+	<div class="col-xs-12 col-md-1">
+		<a href="http://facebook.com/" target="_blank">
+			<img class="button" src="image\facebook.jpg" width="50" height="50" alt="Share on Twitter" title="Share on Facebook" />
+		</a>				
+	</div>
+					<!-- instagram -->
+	<div class="col-xs-12 col-md-1">
+		<a href="http://instagram.com/" target="_blank">
+			<img class="button" src="image\instagram.jpg" width="50" height="50" alt="Share on Twitter" title="Share on Instagram" />
+		</a>			
+	</div>
+					<!-- email -->
+	<div class="col-xs-12 col-md-1">
+		<a href="mailto:someone@example.com?Subject=Hello%20again" target="_blank">
+			<img class="button" src="image\email.jpg" width="50" height="50" alt="Share on Twitter" title="Email" />
+		</a>		
+	</div>				
+</footer>			
+				<!-- javascript for slider of images -->	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
