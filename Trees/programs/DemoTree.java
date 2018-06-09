@@ -31,6 +31,12 @@ public class DemoTree
 		//count no of nodes
 		
 		int no = obj.count();
-		System.out.println("No of nodes in a tree :" + no);		
+		System.out.println("No of nodes in a tree :" + no);	
+		
+		// printing height of tree
+		System.out.println("Height of tree : " + obj.height());
+		
+		// Finding largest element in binary tree		
+		System.out.println("largest element in tree : " + obj.largest());
 	}
 }

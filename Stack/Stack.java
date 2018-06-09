@@ -6,12 +6,18 @@ public class Stack
 	int n=0;
 	private int a[];
 	private int top = -1;
+
 	
 	Stack()
 	{
 		System.out.println("Enter size of stack");
 		n = sc.nextInt();
 		a = new int[n];
+	}
+	
+	Stack(int no) 
+	{
+		a=new int[no];
 	}
 	
 	void push(int v)

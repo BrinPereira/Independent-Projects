@@ -111,4 +111,40 @@ public class Binarytree
 		return x;
 	}
 		
+// Find height of tree
+	int height(Node x)
+	{
+		if((x==null) || (x.getLeft()==null && x.getRight()==null))
+			return 0;
+		else
+		{
+			int a = height(x.getLeft());
+			int b = height(x.getRight());
+			if(a>b)
+				return a+1;
+			else
+				return b+1;
+		}
+	}
+	
+	int height()
+	{
+		return height(root);
+	}
+	
+// Largest element in the binary tree
+	int largest()
+			{
+				Node p = root.getRight();
+				int m = p.getData();
+				while(p!=null)
+				{
+					m=p.getData();
+					p=p.getRight();
+				}
+			return m;	
+			}
+	
+	
+	
 }
