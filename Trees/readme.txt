@@ -5,5 +5,5 @@
 5) Search for the element in the binary tree
 6) count number of leaf nodes using recursion 
 7) Delete the node in the binary tree
-8) preorder , inorder,postorder traversal using non recursion 
+8) preorder , inorder traversal using non recursion stack 
 
