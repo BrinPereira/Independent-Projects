@@ -9,7 +9,7 @@ public class DemoTree
 		Scanner sc= new Scanner(System.in);
 		Binarytree obj = new Binarytree();
 				
-		// creating first linklist
+		
 		System.out.println("Enter no of elemnets you want to enter");
 		int n =sc.nextInt();
 		
@@ -38,5 +38,24 @@ public class DemoTree
 		
 		// Finding largest element in binary tree		
 		System.out.println("largest element in tree : " + obj.largest());
+		
+		// search for element
+		System.out.println("Enter element to be search");
+		int v = sc.nextInt();
+		System.out.println("Elemnt in the treee: " + obj.search(v));
+		
+		// counting leaf nodes	
+		System.out.println("No of leaf node: " + obj.leaves());
+		
+		// deleting element
+		System.out.println("Enter element to be deleted:");
+		int d = sc.nextInt();
+		boolean result = obj.delBst(d);
+		if(result)
+			System.out.println("deleted");
+		else
+			System.out.println("Not found");
+		obj.inorder();
+
 	}
 }

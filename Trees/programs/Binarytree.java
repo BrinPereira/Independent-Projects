@@ -145,6 +145,128 @@ public class Binarytree
 			return m;	
 			}
 	
+// search for element in the tree 
+	boolean search(int v)
+	{
+		Node p =root;
+		boolean check = false;
+		 if(v==p.getData())
+			 check = true;
+		 else
+		 {
+			 while(p!=null)
+			 {
+				 if(v>p.getData())
+				 {
+					if(v==p.getData()) 
+					{
+						check = true;
+						break;
+					}
+					p=p.getRight();					
+				 }
+				 else
+				 {
+					 if(v==p.getData()) 
+						{
+							check = true;
+							break;
+						}
+					 p=p.getLeft();						
+				 }			 		
+			 }
+		
+		 }
+		 
+		 return check;
+	}
+
+// count number of leaf node
 	
+	int  leaves()
+	{
+	  return leaf(root);
+	}
 	
+	int leaf(Node p)
+	{
+		if(p==null)
+			return 0;
+		
+		if(p.getRight()==null && p.getLeft()==null)
+			return 1;
+		else
+		{
+			int x = leaf(p.getLeft());
+			int y= leaf(p.getRight());
+			return x+y;
+		}
+	}
+
+// delete node from the binary tree	
+	boolean delBst(int v)
+	{
+// Search for the element in the tree
+		Node p = root, prev=null , succ = null;
+		while(p!=null)
+		{
+			if(p.getData()==v)
+				break;
+			prev =p;
+			if(p.getData()>v)
+				p=p.getLeft();
+			else
+				p=p.getRight();
+		}
+		
+		if(p==null)
+			return false;		
+// if the node to be deleted has both the subtrees, replace the value of the node either with inorder proceeder.
+// After replacing,  delete proceeder 
+		if(p.getLeft()!=null && p.getRight()!=null)
+		{
+			prev = p;
+			succ = p.getRight();
+			while(succ.getLeft()!=null)
+			{
+				prev = succ;
+				succ = succ.getLeft();
+			}
+			p.setData(succ.getData());
+			p=succ;
+		}
+// if the node to be deleted is root node and has only left or right , then transfer non empty subtree to the reference of the root.	
+// if the node to be deleted is root node and has no subtree then put null .
+// if the node to be deleted is root node and has only one subtree then transfer the non empty subtree to the reference of the root.
+		if(root == p)
+		{
+			if(p.getLeft()!=null)
+				root = p.getLeft();
+			else
+				root = p.getRight();
+		}	
+		else if(p.getLeft()==null && p.getRight()==null)
+		{
+			if(prev.getLeft()==p)
+				prev.setLeft(null);
+			else
+				prev.setRight(null);
+		}
+		else if(p.getLeft()==null && p.getRight()!=null)
+		{
+			if(prev.getLeft()==p)
+				prev.setLeft(p.getRight());
+			else
+				prev.setRight(p.getRight());
+		}
+		else if(p.getLeft()!=null && p.getRight()==null)
+		{
+			if(prev.getLeft()==p)
+				prev.setLeft(p.getLeft());
+			else
+				prev.setRight(p.getLeft());
+		}
+		
+	return true;	
+	}	
 }
