@@ -1,15 +1,6 @@
 
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCrRd96RAXEkLPmePWQTNrtBsCz183uWIA",
-    authDomain: "readforfree-53c3a.firebaseapp.com",
-    databaseURL: "https://readforfree-53c3a.firebaseio.com",
-    projectId: "readforfree-53c3a",
-    storageBucket: "readforfree-53c3a.appspot.com",
-    messagingSenderId: "21540896444"
-  };
-  firebase.initializeApp(config);
-	
+ 	
 
 // script for image sliders
 var slideIndex = 1;
