@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="mystyle2.css">
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
     <link rel="stylesheet" type="text/css" href="mystyle1.css">
-	
 	</head>
 	
 	<body>
@@ -29,7 +28,7 @@
 				<li><a href="#">FAQS</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login / SignUp</a></li>
 			  </ul>
 			</div>
 		  </div>
@@ -52,7 +51,7 @@
 		</div>
 			   
 				<!-- middle frame -->  
-	<div class="col-sm-8 "> 
+	<div class="col-sm-10 "> 
 	<br> <br>
 		<div class="mySlides ">
 			<img src="image\book1.jpg" width="800" height="400"> 
@@ -73,22 +72,11 @@
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
-	
-			 
-			<div class="col-sm-2 sidenav">
-			  <div class="well">
-				<p>ADS</p>
-			   </div>
-			   <div class="well">
-				<p>ADS</p>
-			   </div>
-			</div>
-		 </div>
 </div>
 
 					<!-- lower frame -->
 <footer class="container-fluid text-center">
-	<font color= "white" ><i> &copy ReadforFree</i></font> 
+	<font color= "white" ><i>copyrights @ReadforFree</i></font> 
 					<!-- twitter -->
 	<div class="col-xs-12 col-md-1 col-md-offset-3">
 		<a href="http://twitter.com/" target="_blank">
@@ -113,7 +101,11 @@
 			<img class="button" src="image\email.jpg" width="50" height="50" alt="Share on Twitter" title="Email" />
 		</a>		
 	</div>				
-</footer>			
+</footer>	
+
+					<!-- jAvascript for firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="./script.js"></script>
 				<!-- javascript for slider of images -->	
 <script>
 var slideIndex = 1;

@@ -89,7 +89,31 @@ public class Binarytree
 		}
 	 }		
 
+	
+// level order traversal
+	
+	void levelorder()
+	{
+		int h = height(root);
+		for(int i = 0 ;i<=h;i++)
+		{
+			levelorder(root,i+1);
+		}		
+	}
 
+	void levelorder(Node p , int h)
+	{
+		if(p==null)
+			return ;
+		if(h==1)
+			System.out.println(p.getData());
+		else if(h>1)
+		{
+			levelorder(p.getLeft() , h-1);
+			levelorder(p.getRight() , h-1);
+		}
+		
+	}
 // for counting no. of nodes 
 	int count(Node p)
 	{

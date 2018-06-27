@@ -27,9 +27,9 @@ public class DemoTree
 		obj.inorder();		
 		System.out.println("Postorder traversal :");
 		obj.postorder();
-		
+		System.out.println("Levelorder traversal :");
+		obj.levelorder();		
 		//count no of nodes
-		
 		int no = obj.count();
 		System.out.println("No of nodes in a tree :" + no);	
 		

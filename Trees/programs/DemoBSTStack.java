@@ -24,7 +24,6 @@ public class DemoBSTStack
 				obj.preorder();	
 				System.out.println("Inordertraversal :");
 				obj.inorder();	
-				System.out.println("Postorder traversal :");
-				obj.postorder();
+				
 	}
 }

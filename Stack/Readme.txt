@@ -6,4 +6,5 @@
 6) convert infix to postfix
 7) convert infix to prefix
 8) convert postfix to infix
-9) 
+9) Print maximum element from the stack 
+10) Equal Stack : Find the maximum possible height of the stacks such that all of the stacks are exactly the same height.
